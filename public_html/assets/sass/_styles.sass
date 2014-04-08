@@ -1,0 +1,353 @@
+textarea:focus, input:focus
+	outline: 0
+
+body, html
+	width: 100%
+	height: 100%
+
+	font-family: "OpenSans"
+	font-weight: 100
+	&.no-overflow
+		overflow: hidden
+
+.b-icon
+	font-family: "entypo"
+	font-weight: 400
+
+// Layout
+.l-page
+	width: 100%
+	padding-top: 40px
+
+.l-content
+	width: 950px
+	margin: 0 auto
+	+layout-animation
+
+// Common
+.b-button
+	width: 292px
+	height: 64px
+	text-align: center
+	vertical-align: middle
+	line-height: 64px
+	font-size: 30px
+	text-decoration: none
+	color: #fff
+	background: #39b54a
+	display: inline-block
+	+border-radius(6px)
+	box-shadow: 0 3px 0 #2b963a
+	+transition(all 0.2s ease-out)
+	font-weight: 100
+	position: relative
+	&:hover
+		background: #44d258
+
+// Columns
+.b-columns
+	width: 100%
+	+clearfix
+.b-column
+	float: left
+
+.b-column--50
+	width: 50%
+.b-column--25
+	width: 25%
+.b-column--25--padded
+	width: 20%
+	padding-right: 5%
+.b-column--30
+	width: 30%
+
+// Blocks
+.b-heading
+	color: #9d228b
+	font-size: 45px
+	font-weight: 100
+	margin-bottom: 40px
+.b-subheading
+	color: #7f8c8d
+	font-size: 22px
+	line-height: 160%
+	width: 515px
+	margin: 0 auto
+	font-weight: 100
+
+.b-header
+	position: fixed
+	height: 40px
+	z-index: 100
+	background: #fff
+	width: 100%
+	left: 0
+	top: 0
+	@include box-shadow(2px 4px 4px rgba(0,0,0,.2))
+
+.b-jumbotron
+	height: 685px
+	width: 100%
+	background-repeat: no-repeat
+	background-position: 50% 50%
+	background-image: url(/assets/i/temp/jumbotron.jpg)
+	background-color: #d1d2d4
+
+	text-align: center
+	padding-top: 50px
+
+	position: relative
+.b-follow
+	position: absolute
+	bottom: 30px
+	left: 50%
+	margin-left: -25px
+
+	width: 50px
+	line-height: 50px
+	height: 50px
+	background: rgba(0, 0, 0, 0.2)
+	border-radius: 50px
+
+	font-family: Entypo
+	color: #fff
+	cursor: pointer
+
+	+transition(all 0.2s ease-out)
+
+	+noselect
+	&:hover
+		background: rgba(0, 0, 0, 0.5)
+
+.b-slider
+	height: 184px
+	background: #ebf3f7
+	padding-top: 40px
+	position: relative
+.b-slider .b-subheading
+	text-align: center
+	margin-bottom: 10px
+.b-slider__items
+	width: 100%
+	max-width: 960px
+	margin: 0 auto
+	height: 150px
+.b-slider__item
+	width: 250px
+	height: 150px
+	text-align: center
+	cursor: pointer
+	img
+		display: inline-block
+	&:hover
+		.b-format__title
+			color: #9d228b
+.b-slider__nav__item
+	position: absolute
+	width: 50px
+	height: 50px
+	background: rgba(0, 0, 0, 0.2)
+	border-radius: 50px
+	top: 50%
+	margin-top: -25px
+	line-height: 50px
+	visibility: middle
+	text-align: center
+	font-family: Entypo
+	color: #fff
+	cursor: pointer
+	font-weight: 600
+	+transition(all 0.2s ease-out)
+	&:hover
+		background: rgba(0, 0, 0, 0.5)
+.b-slider__nav__item--prev
+	left: 35px
+.b-slider__nav__item--next
+	right: 35px
+
+.b-format__image
+	height: 60px
+	background-position: 50% 50%
+	background-repeat: no-repeat
+	margin-bottom: 8px
+.b-format__title
+	display: inline-block
+	font-size: 14px
+	border-bottom: 1px dashed
+	color: #7f8c8d
+	margin-bottom: 8px
+	+transition(all 0.2s ease-out)
+.b-format__price
+	font-size: 22px
+	font-weight: 600
+	color: #9d228b
+
+.b-sample
+	height: 615px
+	width: 100%
+
+	background-position: 50% 50%
+	background-image: url(/assets/i/temp/sample.jpg)
+	background-color: #fbfcfc
+	text-align: center
+.b-sample__format
+	height: 470px
+	background-position: 50% 50%
+	background-repeat: no-repeat
+
+.b-benefits
+	text-align: center
+
+	padding-top: 55px
+
+	height: 940px
+	width: 100%
+
+	font-size: 16px
+	color: #7f8c8d
+
+	.b-columns
+		width: 970px
+		margin: 0 auto
+
+.b-benefits__column--text
+	width: 212px
+	margin-top: 85px
+.b-benefits__column--image
+	width: 515px
+.b-benefits__benefit__wrap
+	height: 200px
+	margin-bottom: 12px
+.b-benefits__benefit
+	height: 200px
+	text-align: left
+	vertical-align: middle
+	line-height: 160%
+	display: table-cell
+.b-benefits__image
+	height: 580px
+	background-repeat: no-repeat
+	background-position: 50% 50%
+	background-image: url(/assets/i/temp/benefits.jpg)
+	background-color: #fff
+
+// Footer blocks
++sticky-footer(225px, ".l-page", ".footer-buffer", ".l-footer")
+
+.b-footer
+	z-index: 100
+	background: url(/assets/i/footer-bg.png) no-repeat 50% 50% #4e5b62
+
+.b-footer__address
+	float: left
+.b-footer__copyrights
+	float: right
+	text-align: right
+
+// Popups
+.b-popup
+	display: none
+	position: fixed
+	top: 0
+	left: 0
+
+	width: 100%
+	height: 100%
+
+	overflow: hidden
+	overflow-y: scroll
+
+	z-index: 1000
+	background: rgba(255, 255, 255, 0.85)
+
+.b-popup__content
+	position: relative
+
+	text-align: center
+
+	top: 100px
+	left: 50%
+
+	margin-left: -350px
+	width: 570px
+
+	+border-radius(10px)
+
+	padding: 0 46px
+	padding-top: 50px
+	padding-bottom: 30px
+	margin-bottom: 100px
+
+	@include border-radius(10px)
+	@include background-clip(padding-box)
+	background-color: #fff
+	@include box-shadow(0 0 10px rgba(0,0,0,.15))
+
+	font-size: 12px
+	color: #4d5a6d
+
+	a
+		color: #9d1e89
+		+link-animation
+
+	p
+		margin-bottom: 30px
+
+	.b-heading
+		font-size: 36px
+		margin-bottom: 20px
+	.b-subheading
+		margin-bottom: 35px
+		font-size: 20px
+
+.b-auth__social-buttons
+	margin-bottom: 25px
+.b-auth__social-buttons__button
+	cursor: pointer
+	width: 43.5%
+	display: inline-block
+	*display: inline
+	zoom: 1
+	font-size: 14px
+	+border-radius($site-radius)
+	margin-right: 10px
+	margin-bottom: 10px
+	height: 44px
+	line-height: 44px
+	vertical-align: middle
+	padding-left: 25px
+	+link-animation
+	-webkit-backface-visibility: hidden
+	backface-visibility: hidden
+	+clearfix
+	color: #fff
+	text-align: left
+	&:nth-child(2n)
+		margin-right: 0
+	&.b-auth__social-buttons__button--vk
+		background-color: #5c81a9
+	&.b-auth__social-buttons__button--ok
+		background-color: #ef7800
+	&.b-auth__social-buttons__button--fb
+		background-color: #3765a3
+	&.b-auth__social-buttons__button--mail
+		background-color: #004b88
+
+.b-auth__social-buttons__button__icon
+	width: 40px
+	margin-right: 16px
+	height: 44px
+	vertical-align: middle
+	float: left
+	text-align: center
+	img
+		vertical-align: middle
+
+.b-popup__close
+	width: 23px
+	height: 23px
+	background: url(/assets/i/popup-close.png) no-repeat
+	position: absolute
+	right: -40px
+	top: 0px
+	cursor: pointer
