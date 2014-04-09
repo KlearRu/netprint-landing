@@ -13,22 +13,13 @@ NP.app = function() {
         slidesToScroll: 4,
         responsive: [
             {
-                breakpoint: 1080,
+                breakpoint: 1000,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 3   ,
                     infinite: true,
                     dots: false,
                     arrows: false,
-                }
-            },
-            {
-                breakpoint: 990,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    dots: false,
-                    arrows: false
                 }
             },
             {
