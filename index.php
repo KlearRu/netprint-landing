@@ -132,7 +132,7 @@
 
 			<div class="b-benefits">
 				<h2 class="b-heading">Стильно и современно</h2>
-				<p class="b-subheading">Яркий и выразительный акцент в любом интерьере:
+				<p class="b-subheading b-subheading--big">Яркий и выразительный акцент в любом интерьере:
 					дом, офис, гостиница, ресторан</p>
 
 				<div class="b-columns">

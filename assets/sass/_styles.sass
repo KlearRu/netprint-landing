@@ -127,6 +127,7 @@ body, html
 	background: #ebf3f7
 	padding-top: 40px
 	position: relative
+	padding-bottom: 20px
 .b-slider .b-subheading
 	text-align: center
 	margin-bottom: 10px
@@ -137,14 +138,19 @@ body, html
 	height: 150px
 .b-slider__item
 	width: 250px
-	height: 150px
+	height: 125px
 	text-align: center
 	cursor: pointer
+	padding-top: 10px
+	+border-radius(4px)
 	img
 		display: inline-block
+	&.current
+		background: #d6dfe4
 	&:hover
 		.b-format__title
 			color: #9d228b
+		background: #ffffff
 .b-slider__nav__item
 	position: absolute
 	width: 50px

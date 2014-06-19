@@ -40,6 +40,8 @@ NP.app = function() {
         $('.b-slider__items').slickNext();
     });
     $(".b-slider__item").on("click", function() {
+        $(".b-slider__item").removeClass("current");
+        $(this).addClass("current");
         var src = $(this).data("format");
         $(".b-sample__format").fadeOut(function() {
             $(this).css({
