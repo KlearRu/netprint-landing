@@ -4,6 +4,8 @@ NP.app = function() {
     // Private
 
     // Slider
+    $(".b-slider__item").first().addClass("current");
+
     $('.b-slider__items').slick({
         dots: false,
         infinite: true,
