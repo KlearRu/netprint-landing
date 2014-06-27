@@ -30,6 +30,7 @@ NP.app = function() {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     dots: false,
+                    infinite: true,
                     arrows: false
                 }
             }
