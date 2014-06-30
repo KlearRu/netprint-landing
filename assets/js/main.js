@@ -47,9 +47,12 @@ NP.app = function() {
         $(this).addClass("current");
         var src = $(this).data("format");
         $(".b-sample__format").fadeOut(function() {
-            $(this).css({
-                backgroundImage: "url(" + src + ")"
-            });
+            $(this).html("");
+
+            var $img = $("<img />");
+            $img.attr("src", src);
+            $(this).append($img);
+
             $(this).fadeIn();
         });
     });

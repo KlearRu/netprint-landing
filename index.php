@@ -123,8 +123,8 @@
 			</div>
 
 			<div class="b-sample">
-				<div class="b-sample__format" style="background-image: url(/assets/i/temp/sample-format.jpg)">
-
+				<div class="b-sample__format">
+					<img src="/assets/i/temp/sample-format.jpg" alt=""/>
 				</div>
 
 				<a class="b-button b-button--sample popup-trigger--js" data-popup=".b-popup--login--js" href="#">Заказать</a>
