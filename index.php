@@ -9,6 +9,8 @@
 
 		<link href="/assets/css/screen.css" media="screen" rel="stylesheet" type="text/css" />
 
+		<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
         <script src="/assets/js/vendor/mobile-fixes.js"></script>
         <script src="/assets/js/vendor/jquery-1.10.2.min.js"></script>
         <script src="/assets/js/vendor/slick.min.js"></script>
@@ -169,6 +171,97 @@
 				</div>
 
 				<a class="b-button popup-trigger--js" data-popup=".b-popup--login--js" href="#">Заказать</a>
+			</div>
+
+			<div class="b-delivery">
+				<h2 class="b-heading">Доставка и оплата</h2>
+
+				<div class="b-delivery__map" id="map">
+
+				</div>
+			</div>
+
+			<div class="b-we">
+				<h2 class="b-heading">Почему мы?</h2>
+				<p class="b-subheading b-subheading--big">
+					Несколько слов о том,<br />
+					почему вы должны обратиться к нам
+				</p>
+
+				<div class="b-we__benefits">
+					<div class="b-we__benefits__item">
+						<div class="b-we__benefits__item__title">
+							<div class="b-we__benefits__item__icon">
+								<img src="/assets/i/icon-benefit-hard.png" alt=""/>
+							</div>Твёрдая обложка
+						</div>
+						<div class="b-we__benefits__item__desc">
+							Будьте уверены что ваши фотографии не помнутся.<br />
+							Удобно держать в руках!
+						</div>
+					</div>
+
+					<div class="b-we__benefits__item">
+						<div class="b-we__benefits__item__title">
+							<div class="b-we__benefits__item__icon">
+								<img src="/assets/i/icon-benefits-cal.png" alt=""/>
+							</div>Изготовим за 2 дня
+						</div>
+						<div class="b-we__benefits__item__desc">
+							Срок изготовления любой нашей продукции не более 2 дней.
+						</div>
+
+					</div>
+					<div class="b-we__benefits__item">
+						<div class="b-we__benefits__item__title">
+							<div class="b-we__benefits__item__icon">
+								<img src="/assets/i/icon-benefit-location.png" alt=""/>
+							</div>Доставка по всей России
+						</div>
+						<div class="b-we__benefits__item__desc">
+							Где бы вы не находились
+							вы сможете порадовать себя
+							и своих близких напечатанной продукцией.
+						</div>
+					</div>
+
+					<div class="b-we__benefits__item">
+						<div class="b-we__benefits__item__title">
+							<div class="b-we__benefits__item__icon">
+								<img src="/assets/i/icon-benefit-fast.png" alt=""/>
+							</div>Быстро
+						</div>
+						<div class="b-we__benefits__item__desc">
+							Оформление не займёт много времени. 5 минут и заказ готов
+							к печати.
+						</div>
+					</div>
+
+					<div class="b-we__benefits__item">
+						<div class="b-we__benefits__item__title">
+							<div class="b-we__benefits__item__icon">
+								<img src="/assets/i/icon-benefit-easy.png" alt=""/>
+							</div>Просто
+						</div>
+						<div class="b-we__benefits__item__desc">
+							Лёгкая система редактирования
+							и форматирования. От вас требуется только добавить фотографии.
+						</div>
+					</div>
+
+					<div class="b-we__benefits__item">
+						<div class="b-we__benefits__item__title">
+							<div class="b-we__benefits__item__icon">
+								<img src="/assets/i/icon-benefit-ok.png" alt=""/>
+							</div>Удобно
+						</div>
+						<div class="b-we__benefits__item__desc">
+							Всё на одной странице сайта.
+							Оформите заказ всего
+							в несколько кликов.
+						</div>
+					</div>
+				</div>
 			</div>
 
 			<div class="footer-buffer"></div>

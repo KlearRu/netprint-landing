@@ -63,6 +63,29 @@ NP.app = function() {
         });
     });
 
+
+    // Карта
+    this.map = false;
+
+    this.initMap = function() {
+        this.map = new ymaps.Map('map', {
+            // При инициализации карты обязательно нужно указать
+            // её центр и коэффициент масштабирования.
+            center: [55.76, 37.64], // Москва
+            zoom: 10,
+            controls: ['geolocationControl', 'zoomControl']
+        });
+        this.map.events.add('wheel', function (e) {
+            e.preventDefault();
+        });
+
+        myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+            hintContent: "Название и адрес"
+        });
+
+        this.map.geoObjects.add(myPlacemark);
+    };
+
     // Public
     return this;
 };
@@ -100,6 +123,7 @@ NP.popup = function(el) {
 $(function() {
     FastClick.attach(document.body);
     NP.app = NP.app();
+    ymaps.ready($.proxy(NP.app.initMap, this));
 
     $(".popup-trigger--js").each($.proxy(function(i, el) {
         new NP.popup(el);
