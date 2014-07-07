@@ -93,7 +93,7 @@ body, html
 	width: 100%
 	background-repeat: no-repeat
 	background-position: 50% 50%
-	background-image: url(/assets/i/temp/jumbotron.jpg)
+	background-image: url(/etc/landing_pages/i/temp/jumbotron.jpg)
 	background-color: #d1d2d4
 
 	text-align: center
@@ -123,7 +123,7 @@ body, html
 		background: rgba(0, 0, 0, 0.5)
 
 .b-slider
-	height: 184px
+	height: 230px
 	background: #ebf3f7
 	padding-top: 40px
 	position: relative
@@ -138,7 +138,7 @@ body, html
 	height: 150px
 .b-slider__item
 	width: 250px
-	height: 125px
+	height: 160px
 	text-align: center
 	cursor: pointer
 	padding-top: 10px
@@ -175,7 +175,7 @@ body, html
 	right: 35px
 
 .b-format__image
-	height: 60px
+	height: 90px
 	background-position: 50% 50%
 	background-repeat: no-repeat
 	margin-bottom: 8px
@@ -196,7 +196,7 @@ body, html
 	width: 100%
 
 	background-position: 50% 50%
-	background-image: url(/assets/i/temp/sample.jpg)
+	background-image: url(/etc/landing_pages/i/temp/sample.jpg)
 	background-color: #fbfcfc
 	text-align: center
 .b-sample__format
@@ -245,7 +245,7 @@ body, html
 	height: 580px
 	background-repeat: no-repeat
 	background-position: 50% 50%
-	background-image: url(/assets/i/temp/benefits.jpg)
+	background-image: url(/etc/landing_pages/i/temp/benefits.jpg)
 	background-color: #fff
 
 .b-delivery
@@ -256,6 +256,82 @@ body, html
 .b-delivery__map
 	width: 100%
 	height: 520px
+.b-delivery__filters__wrap
+	width: 100%
+.b-delivery__filters__wrap--extended
+	background: rgba(235, 243, 247, .9)
+	position: absolute
+	margin-top: 1px
+	z-index: 50
+.b-delivery__filters
+	width: 940px
+	margin: 0 auto
+.b-delivery__filters--extended
+	padding-bottom: 30px
+	padding-top: 25px
+	display: none
+.b-delivery__filters__extend
+	font-size: 12px
+	color: #9d228b
+	padding-bottom: 18px
+	padding-top: 18px
+	span
+		cursor: pointer
+		border-bottom: 1px dashed
+		font-weight: 600
+		padding-bottom: 1px
+.b-delivery__select__wrap
+	background-image: url(/etc/landing_pages/i/delivery-select-bg.png)
+	background-position: 100% 50%
+	background-repeat: no-repeat
+	width: 230px
+	cursor: pointer
+	overflow: hidden
+	background-color: #fff
+	@include border-radius(4px)
+.b-delivery__filter
+	width: 33%
+	display: inline-block
+	vertical-align: top
+	text-align: left
+	select, input[type=text]
+		height: 50px
+		background: #fff
+		width: 230px
+		@include border-radius(4px)
+		color: #242531
+		font-size: 18px
+		border: none
+		appearance: none
+		-moz-appearance: none
+		-webkit-appearance: none
+		font-weight: 100
+		padding: 0 15px
+	//input[type=text]
+	//	width: 320px
+	select
+		cursor: pointer
+		//padding-top: 12px
+		background: transparent
+		@-moz-document url-prefix()
+			padding-top: 12px
+			width: 250px
+			color: rgba(0,0,0,0)
+			text-shadow: 0 0 0 #000
+		&:focus
+			outline: 0
+		::-moz-focus-inner
+			border: 0
+			outline: 0
+
+.b-delivery__filter__title
+	font-size: 12px
+	color: #727f86
+	font-weight: 600
+	margin-bottom: 7px
+	margin-left: 16px
+.b-delivery__filter__title--mobile
+	display: none
 
 .b-we
 	background: #fff
@@ -296,7 +372,7 @@ body, html
 
 .b-footer
 	z-index: 100
-	background: url(/assets/i/footer-bg.png) no-repeat 50% 50% #4e5b62
+	background: url(/etc/landing_pages/i/footer-bg.png) no-repeat 50% 50% #4e5b62
 
 .b-footer__address
 	float: left
@@ -406,7 +482,7 @@ body, html
 .b-popup__close
 	width: 23px
 	height: 23px
-	background: url(/assets/i/popup-close.png) no-repeat
+	background: url(/etc/landing_pages/i/popup-close.png) no-repeat
 	position: absolute
 	right: -40px
 	top: 0px
