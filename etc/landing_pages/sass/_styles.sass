@@ -122,6 +122,36 @@ body, html
 	&:hover
 		background: rgba(0, 0, 0, 0.5)
 
+.b-jumbotron--modified
+	padding-top: 0
+	background: none
+	height: auto
+	position: relative
+.b-jumbotron--modified__header
+	padding-top: 40px
+	padding-bottom: 40px
+	position: absolute
+	width: 100%
+.jumbotron--modified__image
+	height: 735px
+	background: url(/etc/landing_pages/i/temp/jumbotron-image.jpg) 50% 0 no-repeat
+	background-size: auto 100%
+	.b-sample__format
+		max-height: 220px
+		height: 220px
+		line-height: 220px
+		padding-top: 230px
+		img
+			max-height: 220px
+			max-width: 90%
+.b-lead
+	background: #ebf3f7
+	padding-top: 35px
+	padding-bottom: 35px
+	text-align: center
+	.b-subheading
+		margin-bottom: 20px
+
 .b-slider
 	height: 230px
 	background: #ebf3f7
@@ -173,6 +203,17 @@ body, html
 	left: 35px
 .b-slider__nav__item--next
 	right: 35px
+
+.b-slider--modified
+	height: 160px
+	background: #ebf3f7
+	width: 100%
+	padding: 0
+	.b-slider__item
+		margin-top: 20px
+		height: 110px
+		.b-format__title
+			margin-top: 25px
 
 .b-format__image
 	height: 90px
@@ -336,6 +377,8 @@ body, html
 .b-we
 	background: #fff
 	text-align: center
+.b-we--padded
+	padding-top: 40px
 .b-we__benefits
 	max-width: 940px
 	margin: 0 auto
@@ -367,7 +410,32 @@ body, html
 	color: #586374
 	line-height: 160%
 
-// Footer blocks
+.b-motivation
+	margin-top: 45px
+	padding-bottom: 20px
+	.b-heading, .b-subheading
+		text-align: center
+	.b-subheading
+		margin-bottom: 40px
+.b-motivation__list
+	text-align: center
+.b-motivation__item
+	width: 200px
+	vertical-align: top
+	display: inline-block
+	margin: 0 30px
+	text-align: left
+	margin-bottom: 40px
+	img
+		max-width: 100%
+		margin-bottom: 25px
+	p
+		font-size: 16px
+		color: #7f8c8d
+		line-height: 160%
+
+
+	// Footer blocks
 +sticky-footer(225px, ".l-page", ".footer-buffer", ".l-footer")
 
 .b-footer
@@ -404,12 +472,12 @@ body, html
 	top: 100px
 	left: 50%
 
-	margin-left: -350px
+	margin-left: -310px
 	width: 570px
 
 	+border-radius(10px)
 
-	padding: 0 46px
+	padding-left: 46px
 	padding-top: 50px
 	padding-bottom: 30px
 	margin-bottom: 100px
@@ -436,8 +504,64 @@ body, html
 		margin-bottom: 35px
 		font-size: 20px
 
+.b-auth__login
+	background-color: #e4eaec
+	margin-left: -46px
+	padding-left: 46px
+	padding-right: 50px
+	margin-top: -50px
+	padding-top: 50px
+	+border-radius(10px 10px 0 0)
+	padding-bottom: 30px
+
+.b-auth__or
+	width: 31px
+	height: 31px
+	@include border-radius(16px)
+	background-color: #c5c9cf
+	text-align: center
+	line-height: 31px
+	vertical-align: middle
+	position: absolute
+	left: 50%
+	margin-left: -16px
+	margin-top: 14px
+.b-auth__params
+	width: 60%
+	float: left
+	height: 45px
+	line-height: 45px
+	text-align: left
+	margin-top: 10px
+	.b-checkbox
+		margin-left: 40px
+.b-auth__btn
+	margin-top: 10px
+	width: 40%
+	float: right
+	height: 45px
+	line-height: 45px
+	cursor: pointer
+	background: #9d228b
+	@include border-radius(5px)
+	font-size: 14px
+	position: relative
+	right: -5px
+	display: block
+	+transition(all 0.2s ease-out)
+	color: #fff !important
+	text-decoration: none
+
+	&:hover
+		opacity: .7
+
 .b-auth__social-buttons
 	margin-bottom: 25px
+	padding-top: 45px
+	padding-right: 46px
+.b-auth__social-buttons__note
+	padding-top: 20px
+	text-align: center
 .b-auth__social-buttons__button
 	cursor: pointer
 	width: 43.5%
@@ -487,3 +611,39 @@ body, html
 	right: -40px
 	top: 0px
 	cursor: pointer
+
+.b-row
+	margin-bottom: 12px
+	+clearfix
+
+.b-input
+	width: 93%
+	//width: calc(100% - 40px)
+	height: 45px
+	border: 1px solid #cdd5d9
+	@include border-radius(6px)
+	font-size: 14px
+	color: #4d5a6d
+	padding: 0 20px
+
+.b-checkbox
+	cursor: pointer
+.b-checkbox__custom
+	width: 20px
+	height: 20px
+	+border-radius(3px)
+	background: #fff
+	border: 1px solid rgba(77,90,109,.15)
+	margin-right: 6px
+	vertical-align: middle
+	line-height: 20px
+	text-align: center
+	position: relative
+	top: -2px
+	display: none
+	&.show
+		display: inline-block
+		*display: inline
+		zoom: 1
+.b-checkbox__input.hide
+	display: none

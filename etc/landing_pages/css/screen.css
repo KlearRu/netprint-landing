@@ -480,6 +480,46 @@ body.no-overflow, html.no-overflow {
   background: rgba(0, 0, 0, 0.5);
 }
 
+.b-jumbotron--modified {
+  padding-top: 0;
+  background: none;
+  height: auto;
+  position: relative;
+}
+
+.b-jumbotron--modified__header {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: absolute;
+  width: 100%;
+}
+
+.jumbotron--modified__image {
+  height: 735px;
+  background: url(/etc/landing_pages/i/temp/jumbotron-image.jpg) 50% 0 no-repeat;
+  background-size: auto 100%;
+}
+.jumbotron--modified__image .b-sample__format {
+  max-height: 220px;
+  height: 220px;
+  line-height: 220px;
+  padding-top: 230px;
+}
+.jumbotron--modified__image .b-sample__format img {
+  max-height: 220px;
+  max-width: 90%;
+}
+
+.b-lead {
+  background: #ebf3f7;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  text-align: center;
+}
+.b-lead .b-subheading {
+  margin-bottom: 20px;
+}
+
 .b-slider {
   height: 230px;
   background: #ebf3f7;
@@ -553,6 +593,20 @@ body.no-overflow, html.no-overflow {
 
 .b-slider__nav__item--next {
   right: 35px;
+}
+
+.b-slider--modified {
+  height: 160px;
+  background: #ebf3f7;
+  width: 100%;
+  padding: 0;
+}
+.b-slider--modified .b-slider__item {
+  margin-top: 20px;
+  height: 110px;
+}
+.b-slider--modified .b-slider__item .b-format__title {
+  margin-top: 25px;
 }
 
 .b-format__image {
@@ -767,6 +821,10 @@ body.no-overflow, html.no-overflow {
   text-align: center;
 }
 
+.b-we--padded {
+  padding-top: 40px;
+}
+
 .b-we__benefits {
   max-width: 940px;
   margin: 0 auto;
@@ -807,6 +865,39 @@ body.no-overflow, html.no-overflow {
   text-align: left;
   font-size: 14px;
   color: #586374;
+  line-height: 160%;
+}
+
+.b-motivation {
+  margin-top: 45px;
+  padding-bottom: 20px;
+}
+.b-motivation .b-heading, .b-motivation .b-subheading {
+  text-align: center;
+}
+.b-motivation .b-subheading {
+  margin-bottom: 40px;
+}
+
+.b-motivation__list {
+  text-align: center;
+}
+
+.b-motivation__item {
+  width: 200px;
+  vertical-align: top;
+  display: inline-block;
+  margin: 0 30px;
+  text-align: left;
+  margin-bottom: 40px;
+}
+.b-motivation__item img {
+  max-width: 100%;
+  margin-bottom: 25px;
+}
+.b-motivation__item p {
+  font-size: 16px;
+  color: #7f8c8d;
   line-height: 160%;
 }
 
@@ -863,12 +954,12 @@ html, body {
   text-align: center;
   top: 100px;
   left: 50%;
-  margin-left: -350px;
+  margin-left: -310px;
   width: 570px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
-  padding: 0 46px;
+  padding-left: 46px;
   padding-top: 50px;
   padding-bottom: 30px;
   margin-bottom: 100px;
@@ -908,8 +999,82 @@ html, body {
   font-size: 20px;
 }
 
+.b-auth__login {
+  background-color: #e4eaec;
+  margin-left: -46px;
+  padding-left: 46px;
+  padding-right: 50px;
+  margin-top: -50px;
+  padding-top: 50px;
+  -moz-border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px;
+  border-radius: 10px 10px 0 0;
+  padding-bottom: 30px;
+}
+
+.b-auth__or {
+  width: 31px;
+  height: 31px;
+  -moz-border-radius: 16px;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  background-color: #c5c9cf;
+  text-align: center;
+  line-height: 31px;
+  vertical-align: middle;
+  position: absolute;
+  left: 50%;
+  margin-left: -16px;
+  margin-top: 14px;
+}
+
+.b-auth__params {
+  width: 60%;
+  float: left;
+  height: 45px;
+  line-height: 45px;
+  text-align: left;
+  margin-top: 10px;
+}
+.b-auth__params .b-checkbox {
+  margin-left: 40px;
+}
+
+.b-auth__btn {
+  margin-top: 10px;
+  width: 40%;
+  float: right;
+  height: 45px;
+  line-height: 45px;
+  cursor: pointer;
+  background: #9d228b;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  position: relative;
+  right: -5px;
+  display: block;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  color: white !important;
+  text-decoration: none;
+}
+.b-auth__btn:hover {
+  opacity: 0.7;
+}
+
 .b-auth__social-buttons {
   margin-bottom: 25px;
+  padding-top: 45px;
+  padding-right: 46px;
+}
+
+.b-auth__social-buttons__note {
+  padding-top: 20px;
+  text-align: center;
 }
 
 .b-auth__social-buttons__button {
@@ -988,6 +1153,62 @@ html, body {
   cursor: pointer;
 }
 
+.b-row {
+  margin-bottom: 12px;
+}
+.b-row:after, .b-row:before {
+  content: "";
+  display: table;
+}
+.b-row:after {
+  clear: both;
+}
+.b-row {
+  *zoom: 1;
+}
+
+.b-input {
+  width: 93%;
+  height: 45px;
+  border: 1px solid #cdd5d9;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #4d5a6d;
+  padding: 0 20px;
+}
+
+.b-checkbox {
+  cursor: pointer;
+}
+
+.b-checkbox__custom {
+  width: 20px;
+  height: 20px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background: white;
+  border: 1px solid rgba(77, 90, 109, 0.15);
+  margin-right: 6px;
+  vertical-align: middle;
+  line-height: 20px;
+  text-align: center;
+  position: relative;
+  top: -2px;
+  display: none;
+}
+.b-checkbox__custom.show {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+
+.b-checkbox__input.hide {
+  display: none;
+}
+
 @media only screen and (max-width: 980px) {
   .b-heading {
     font-size: 30px;
@@ -1003,6 +1224,11 @@ html, body {
     padding-top: 30px;
     height: 520px;
     background-size: auto 100%;
+  }
+
+  .b-jumbotron--modified {
+    padding-top: 0;
+    height: auto;
   }
 
   .b-follow {
@@ -1122,6 +1348,13 @@ html, body {
     height: 320px;
   }
 
+  .jumbotron--modified__image {
+    height: 650px;
+  }
+  .jumbotron--modified__image .b-sample__format {
+    padding-top: 180px;
+  }
+
   .b-footer {
     background-size: 320px auto;
   }
@@ -1179,8 +1412,15 @@ html, body {
     right: 30px;
   }
 
+  .b-auth__login {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+  }
+
   .b-auth__social-buttons {
     text-align: left;
+    padding-right: 0;
   }
 
   .b-auth__social-buttons__button {
@@ -1192,6 +1432,28 @@ html, body {
 
   .b-auth__social-buttons__button:nth-child(2n) {
     margin-right: auto;
+  }
+
+  .b-input {
+    width: 70%;
+  }
+
+  .b-auth__params {
+    width: 70%;
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 0 20px;
+  }
+
+  .b-auth__btn {
+    width: 70%;
+    left: 0;
+    margin: 0 auto;
+    float: none;
+    text-align: center;
+    padding: 0 20px;
   }
 }
 @media only screen and (max-width: 650px) {
@@ -1208,6 +1470,18 @@ html, body {
     padding-top: 30px;
     height: 380px;
     background-size: auto 100%;
+  }
+
+  .b-jumbotron--modified {
+    padding-top: 0;
+    height: auto;
+  }
+
+  .jumbotron--modified__image {
+    height: 600px;
+  }
+  .jumbotron--modified__image .b-sample__format {
+    padding-top: 150px;
   }
 
   .b-follow {
@@ -1228,6 +1502,10 @@ html, body {
     background-size: 310px auto;
   }
 
+  .b-motivation__item p {
+    font-size: 14px;
+  }
+
   .b-we__benefits {
     margin: none;
     margin-bottom: 30px;
@@ -1241,12 +1519,12 @@ html, body {
   }
 
   .b-we__benefits__item__title {
-    font-size: 12px;
+    font-size: 16px;
     margin-bottom: 5px;
   }
 
   .b-we__benefits__item__desc {
-    font-size: 10px;
+    font-size: 14px;
   }
 }
 @media only screen and (max-width: 320px) {
@@ -1267,6 +1545,11 @@ html, body {
   }
   .b-jumbotron .b-heading {
     margin-bottom: 10px;
+  }
+
+  .b-jumbotron--modified {
+    padding-top: 0;
+    height: auto;
   }
 
   .b-follow {

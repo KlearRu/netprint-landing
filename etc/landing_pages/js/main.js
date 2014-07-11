@@ -246,10 +246,40 @@ NP = function() {
         return true;
     })();
 
+    // Checkbox
+    this.checkbox = function(el) {
+        this.$checkboxWrap = $(el);
+
+        this.$checkboxIcon = this.$checkboxWrap.find(".b-icon");
+        this.$checkboxInput = this.$checkboxWrap.find(".b-checkbox__input");
+        this.$checkboxCustom = this.$checkboxWrap.find(".b-checkbox__custom");
+
+        this.$checkboxWrap.on("touchend, click", $.proxy(function() {
+            if( this.$checkboxInput.is(":checked") ) {
+                this.$checkboxInput.prop('checked', false);
+                this.$checkboxIcon.hide();
+            } else {
+                this.$checkboxInput.prop('checked', true);
+                this.$checkboxIcon.show();
+            }
+        }, this));
+
+        // Init
+        this.$checkboxInput.addClass("hide");
+        this.$checkboxCustom.addClass("show");
+
+        if( this.$checkboxInput.is(":checked") ) {
+            this.$checkboxIcon.show();
+        } else {
+            this.$checkboxIcon.hide();
+        }
+    };
+
     // Public
     return {
         popup: this.popup,
-        map: this.map
+        map: this.map,
+        checkbox: this.checkbox
     };
 };
 
@@ -259,5 +289,8 @@ $(function() {
 
     $(".popup-trigger--js").each($.proxy(function(i, el) {
         new NP.popup(el);
+    }, this));
+    $(".b-checkbox--js").each($.proxy(function(i, el) {
+        new NP.checkbox(el);
     }, this));
 });
