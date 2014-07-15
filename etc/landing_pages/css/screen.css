@@ -433,8 +433,9 @@ body.no-overflow, html.no-overflow {
   font-weight: 100;
 }
 
-.b-subheading--descriptor {
+.b-subheading--descriptor span {
   color: #9d228b;
+  font-weight: 600;
 }
 
 .b-header {

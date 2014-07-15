@@ -223,11 +223,11 @@ NP = function() {
                 new NP.popup(el);
             }, this));
 
-            if( $(".format-descriptor--js").size() == 0 ) {
-                $('<p class="b-subheading"></p>').insertBefore(".order-trigger--js");
-            }
-            $(".format-descriptor--js").text(
-                "Выбран формат " + $(this).find(".b-format__title").text() + " за " + $(this).find(".b-format__price").text()
+//            if( $(".format-descriptor--js").size() == 0 ) {
+//                $('<p class="b-subheading"></p>').insertBefore(".order-trigger--js");
+//            }
+            $(".format-descriptor--js").html(
+                "Выбран формат <span>" + $(this).find(".b-format__title").text() + "</span> за <span>" + $(this).find(".b-format__price").text() + "</span>"
             );
             $(".format-descriptor--js").addClass("b-subheading--descriptor");
         });
