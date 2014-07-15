@@ -119,7 +119,7 @@
 			</div>
 
 			<div class="b-lead">
-				<p class="b-subheading format-descriptor--js">Выберите формат чтобы приступить к оформлению заказа</p>
+				<p class="b-subheading format-descriptor--js"><a href="#" class="order-trigger--js ajax">Выберите формат</a> чтобы приступить к оформлению заказа</p>
 
 <!--				popup-trigger--js-->
 				<a class="b-button b-button--sample order-trigger--js" data-popup=".b-popup--login--js" href="#">Заказать</a>

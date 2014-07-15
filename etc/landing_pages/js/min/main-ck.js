@@ -229,6 +229,7 @@ NP = function() {
             $(".format-descriptor--js").text(
                 "Выбран формат " + $(this).find(".b-format__title").text() + " за " + $(this).find(".b-format__price").text()
             );
+            $(".format-descriptor--js").addClass("b-subheading--descriptor");
         });
         $("body").on("click", ".order-trigger--js", function(e) {
             e.preventDefault();

@@ -331,6 +331,12 @@ body.no-overflow, html.no-overflow {
   overflow: hidden;
 }
 
+.ajax {
+  text-decoration: none;
+  color: #9d228b;
+  border-bottom: 1px dashed #9d228b;
+}
+
 .b-icon {
   font-family: "entypo";
   font-weight: 400;
@@ -425,6 +431,10 @@ body.no-overflow, html.no-overflow {
   width: 515px;
   margin: 0 auto;
   font-weight: 100;
+}
+
+.b-subheading--descriptor {
+  color: #9d228b;
 }
 
 .b-header {
