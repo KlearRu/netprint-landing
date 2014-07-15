@@ -216,6 +216,27 @@ NP = function() {
                 }
             ]
         });
+        $(".b-slider__item").on("click", function() {
+            $(".order-trigger--js").addClass("popup-trigger--js").removeClass("order-trigger--js");
+            $(".popup-trigger--js").not(".popup-trigger-binded").each($.proxy(function(i, el) {
+                $(el).addClass("popup-trigger-binded");
+                new NP.popup(el);
+            }, this));
+
+            if( $(".format-descriptor--js").size() == 0 ) {
+                $('<p class="b-subheading"></p>').insertBefore(".order-trigger--js");
+            }
+            $(".format-descriptor--js").text(
+                "Выбран формат " + $(this).find(".b-format__title").text() + " за " + $(this).find(".b-format__price").text()
+            );
+        });
+        $("body").on("click", ".order-trigger--js", function(e) {
+            e.preventDefault();
+            $("html, body").animate({
+                scrollTop: $(".order-trigger-to--js").offset().top + "px"
+            });
+        });
+
         $(".b-slider__nav__item--prev--js").on("click", function() {
             $('.b-slider__items').slickPrev();
         });
@@ -287,7 +308,8 @@ $(function() {
     FastClick.attach(document.body);
     window.NP = NP();
 
-    $(".popup-trigger--js").each($.proxy(function(i, el) {
+    $(".popup-trigger--js").not(".popup-trigger-binded").each($.proxy(function(i, el) {
+        $(el).addClass("popup-trigger-binded");
         new NP.popup(el);
     }, this));
     $(".b-checkbox--js").each($.proxy(function(i, el) {

@@ -24,7 +24,7 @@
 		<div class="l-page">
 			<header class="b-header"></header>
 
-			<div class="b-jumbotron b-jumbotron--modified">
+			<div class="b-jumbotron b-jumbotron--modified order-trigger-to--js">
 				<div class="b-jumbotron--modified__header">
 					<h2 class="b-heading">Модульные картины</h2>
 					<p class="b-subheading">Модульная картина состоит из сегментов,
@@ -119,9 +119,10 @@
 			</div>
 
 			<div class="b-lead">
-				<p class="b-subheading">Выберите формат чтобы приступить к оформлению заказа</p>
+				<p class="b-subheading format-descriptor--js">Выберите формат чтобы приступить к оформлению заказа</p>
 
-				<a class="b-button b-button--sample popup-trigger--js" data-popup=".b-popup--login--js" href="#">Заказать</a>
+<!--				popup-trigger--js-->
+				<a class="b-button b-button--sample order-trigger--js" data-popup=".b-popup--login--js" href="#">Заказать</a>
 			</div>
 
 			<div class="b-we b-we--padded">
@@ -223,8 +224,8 @@
 								Вход
 							</h2>
 							<p class="b-subheading">
-								Чтобы оформить заказ, войдите в систему
-								через сервис, где вы уже зарегистрированы.
+								Чтобы оформить заказ, авторизуйтесь на netPrint.ru
+
 							</p>
 
 							<div class="b-row">
@@ -251,6 +252,10 @@
 								или
 							</div>
 						</div>
+
+						<p class="b-subheading b-subheading--popup">
+							войдите в систему через сервис, где вы уже зарегистрированы
+						</p>
 
 						<div class="b-auth__social-buttons">
 							<div class="b-auth__social-buttons__button b-auth__social-buttons__button--vk">

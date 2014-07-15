@@ -32,11 +32,11 @@
 				<div class="b-follow"></div>
 			</div>
 
-			<div class="b-slider">
+			<div class="b-slider order-trigger-to--js">
 				<p class="b-subheading">Доступные форматы</p>
 
 				<div class="b-slider__items">
-					<div class="b-slider__item" data-format="/etc/landing_pages/i/temp/sample-format.png">
+					<div class="b-slider__item" data-format="/etc/landing_pages/i/temp/12101.png">
 						<div class="b-format__image" style="background-image: url(/etc/landing_pages/i/temp/sample-format-pic.png)">
 						</div>
 						<div class="b-format__title">
@@ -129,7 +129,8 @@
 					<img src="/etc/landing_pages/i/temp/sample-format.jpg" alt=""/>
 				</div>
 
-				<a class="b-button b-button--sample popup-trigger--js" data-popup=".b-popup--login--js" href="#">Заказать</a>
+<!--				popup-trigger--js-->
+				<a class="b-button b-button--sample order-trigger--js" data-popup=".b-popup--login--js" href="#">Заказать</a>
 			</div>
 
 			<div class="b-benefits">
@@ -170,7 +171,8 @@
 					</div>
 				</div>
 
-				<a class="b-button popup-trigger--js" data-popup=".b-popup--login--js" href="#">Заказать</a>
+<!--				popup-trigger--js-->
+				<a class="b-button order-trigger--js" data-popup=".b-popup--login--js" href="#">Заказать</a>
 			</div>
 
 			<div class="b-delivery">
@@ -433,12 +435,42 @@
 
 				<form action="">
 					<fieldset>
-						<h2 class="b-heading">
-							Вход
-						</h2>
-						<p class="b-subheading">
-							Чтобы оформить заказ, войдите в систему
-							через сервис, где вы уже зарегистрированы.
+						<div class="b-auth__login">
+							<h2 class="b-heading">
+								Вход
+							</h2>
+							<p class="b-subheading">
+								Чтобы оформить заказ, авторизуйтесь на netPrint.ru
+
+							</p>
+
+							<div class="b-row">
+								<input class="b-input b-input--auth" placeholder="E-mail или телефон" type="text" />
+							</div>
+							<div class="b-row">
+								<input class="b-input b-input--auth" placeholder="Пароль"  type="password" />
+							</div>
+
+							<div class="b-row">
+								<div class="b-auth__params">
+									<a href="#" class="popup-trigger--js" data-popup=".b-popup--amnesia--js">Забыли пароль?</a>
+
+									<label class="b-checkbox b-checkbox--js b-auth__params__remember__checkbox">
+										<span class="b-checkbox__custom"><span class="b-icon b-icon--checkmark--js"></span></span>
+										<input class="b-checkbox__input" type="checkbox" /> Запомнить меня
+									</label>
+								</div>
+
+								<a class="b-auth__btn" href="#">Войти</a>
+							</div>
+
+							<div class="b-auth__or">
+								или
+							</div>
+						</div>
+
+						<p class="b-subheading b-subheading--popup">
+							войдите в систему через сервис, где вы уже зарегистрированы
 						</p>
 
 						<div class="b-auth__social-buttons">
@@ -466,10 +498,12 @@
 								</div>
 								Мой мир
 							</div>
-						</div>
 
-						<p><a href="#">У меня нет аккаунта в соц. сети</a></p>
-						<p>Регистрируясь, вы принимаете условия <a href="#">Пользовательского соглашения</a></p>
+							<div class="b-auth__social-buttons__note">
+								<p><a href="#">У меня нет аккаунта в соц. сети</a></p>
+								<p>Регистрируясь, вы принимаете условия <a href="#">Пользовательского соглашения</a></p>
+							</div>
+						</div>
 					</fieldset>
 				</form>
 			</div>

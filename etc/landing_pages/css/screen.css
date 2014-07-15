@@ -657,6 +657,8 @@ body.no-overflow, html.no-overflow {
   -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
   line-height: 0;
+  max-height: 320px;
+  max-width: 90%;
 }
 
 .b-benefits {
@@ -996,7 +998,11 @@ html, body {
 }
 .b-popup__content .b-subheading {
   margin-bottom: 35px;
-  font-size: 20px;
+  font-size: 16px;
+}
+.b-popup__content .b-subheading--popup {
+  margin-bottom: -10px;
+  margin-top: 40px;
 }
 
 .b-auth__login {
