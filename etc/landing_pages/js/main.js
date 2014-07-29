@@ -178,6 +178,15 @@ NP = function() {
         this.hidePopup();
     };
 
+    this.closePopup = function() {
+        $(".b-popup").fadeOut();
+    };
+    this.bindClosePopup = (function() {
+        $(".b-popup__close--js").on("click", function() {
+            parent.NP.closePopup();
+        });
+    })();
+
     // Slider
     this.slider = (function() {
         if( $(".b-slider").size() == 0 ) {
@@ -301,7 +310,8 @@ NP = function() {
     return {
         popup: this.popup,
         map: this.map,
-        checkbox: this.checkbox
+        checkbox: this.checkbox,
+        closePopup: this.closePopup
     };
 };
 
@@ -316,4 +326,11 @@ $(function() {
     $(".b-checkbox--js").each($.proxy(function(i, el) {
         new NP.checkbox(el);
     }, this));
+
+//    $(".order-trigger--js").addClass("popup-trigger--js");
+//    $(".popup-trigger--js").not(".popup-trigger-binded").each($.proxy(function(i, el) {
+//        $(el).addClass("popup-trigger-binded");
+//        var pp = new NP.popup(el);
+//        $(".order-trigger--js").trigger("click");
+//    }, this));
 });
