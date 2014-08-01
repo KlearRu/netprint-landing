@@ -180,12 +180,31 @@ NP = function() {
 
     this.closePopup = function() {
         $(".b-popup").fadeOut();
+        $(".b-popups__frame").fadeOut();
     };
     this.bindClosePopup = (function() {
-        $(".b-popup__close--js").on("click", function() {
+        $(".b-popup__close--js").on("click", function(e) {
+            e.preventDefault();
+
             parent.NP.closePopup();
         });
     })();
+
+    this.bindShowPopup = (function() {
+        $("body").on("click", ".popup-trigger--js", function(e) {
+            e.preventDefault();
+
+            if( $(".b-popups__frame").size() > 0 ) {
+                $(".b-popups__frame")[0].contentWindow.showPopup($(this).data("popup"));
+                $(".b-popups__frame").fadeIn();
+            }
+        });
+    })();
+    this.showPopup = function(className) {
+        //$(".b-popup").fadeOut();
+        console.log(className);
+        $(className).show();
+    };
 
     // Slider
     this.slider = (function() {
@@ -311,7 +330,8 @@ NP = function() {
         popup: this.popup,
         map: this.map,
         checkbox: this.checkbox,
-        closePopup: this.closePopup
+        closePopup: this.closePopup,
+        showPopup: this.showPopup,
     };
 };
 

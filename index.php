@@ -429,6 +429,6 @@
 
 		<footer class="l-footer b-footer"></footer>
 
-		<iframe class="b-popup b-popup--login b-popup--login--js" src="/popup.html"></iframe>
+		<iframe src="/popups.html" class="b-popups__frame" frameborder="0"></iframe>
 	</body>
 </html>

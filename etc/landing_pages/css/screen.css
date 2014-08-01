@@ -1227,6 +1227,29 @@ html, body {
   display: none;
 }
 
+.b-popups__frame {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: none;
+}
+
+.b-auth__credentials--amnesia {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: 0;
+  padding-right: 46px;
+}
+
+.b-auth__btn--amnesia {
+  margin: 0 auto;
+  right: 0;
+  float: none;
+}
+
 @media only screen and (max-width: 980px) {
   .b-heading {
     font-size: 30px;
