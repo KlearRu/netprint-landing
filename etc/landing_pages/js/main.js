@@ -202,8 +202,9 @@ NP = function() {
     })();
     this.showPopup = function(className) {
         //$(".b-popup").fadeOut();
-        console.log(className);
-        $(className).show();
+        $(className).css({
+            display: "block"
+        });
     };
 
     // Slider
