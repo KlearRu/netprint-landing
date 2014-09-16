@@ -606,7 +606,32 @@ body, html
 		background-color: #3765a3
 	&.b-auth__social-buttons__button--mail
 		background-color: #004b88
-
+	&.b-auth__social-buttons__button--gplus
+		background-color: #cc3333
+	&.b-auth__social-buttons__button--ya
+		@include border-radius(5px)
+		@include background-clip(padding-box)
+		background-color: #f9f9f9
+		@include background-image(linear-gradient(bottom, rgba(0,0,0,.1) 0%, rgba(255,255,255,.1) 100%))
+.b-auth__social-buttons__button--small
+	width: 45px
+	height: 45px
+	padding-left: 0
+	line-height: 45px
+	vertical-align: middle
+	margin-right: 5px
+	margin-left: 5px
+	&:nth-child(2n)
+		margin-right: 5px
+		margin-left: 5px
+	.b-auth__social-buttons__button__icon
+		width: 45px
+		height: 45px
+		line-height: 45px
+		vertical-align: middle
+		margin-right: 0
+		background-position: 50% 50%
+		background-repeat: no-repeat
 .b-auth__social-buttons__button__icon
 	width: 40px
 	margin-right: 16px
@@ -640,7 +665,6 @@ body, html
 	font-size: 14px
 	color: #4d5a6d
 	padding: 0 20px
-
 .b-checkbox
 	cursor: pointer
 .b-checkbox__custom
@@ -683,3 +707,25 @@ body, html
 	margin: 0 auto
 	right: 0
 	float: none
+
+.b-popup--login-modified
+	.b-popup__content
+		width: 570px + 46px
+		padding-left: 0
+	.b-subheading
+		font-size: 20px
+		margin-top: 10px
+		margin-bottom: -15px
+	.b-auth__social-buttons
+		padding-right: 0
+.b-auth__actions
+	margin-top: 10px
+	margin-bottom: 30px
+.b-auth__credentials--register
+	padding: 0 46px
+	margin-top: 40px
+	padding-bottom: 20px
+	.b-input--small
+		width: 255px
+		margin-right: 15px
+		margin-top: 10px
