@@ -1322,6 +1322,10 @@ html, body {
   margin-top: 10px;
 }
 
+.b-auth__credentials__misc {
+  margin-top: 30px;
+}
+
 @media only screen and (max-width: 980px) {
   .b-heading {
     font-size: 30px;
