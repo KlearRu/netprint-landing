@@ -147,6 +147,20 @@ NP = function() {
         }
     };
 
+    // Правила акций
+    this.freebookRules = function() {
+        $(".js-freebook-rules").on("click", function(e) {
+            e.preventDefault();
+            $(this).animate({
+                opacity: 0.01
+            });
+            $(".b-freebook__rules").slideDown();
+        });
+
+        return this;
+    };
+    this.freebookRules = new this.freebookRules();
+
     // Popup
     this.popup = function(el) {
         this.$trigger = $(el);
@@ -329,10 +343,11 @@ NP = function() {
     // Public
     return {
         popup: this.popup,
+        freebookRules: this.freebookRules,
         map: this.map,
         checkbox: this.checkbox,
         closePopup: this.closePopup,
-        showPopup: this.showPopup,
+        showPopup: this.showPopup
     };
 };
 
@@ -355,3 +370,4 @@ $(function() {
 //        $(".order-trigger--js").trigger("click");
 //    }, this));
 });
+
