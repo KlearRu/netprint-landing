@@ -2020,6 +2020,10 @@ html, body {
     line-height: 50px;
     width: 250px;
   }
+
+  .b-note {
+    font-size: 11px;
+  }
 }
 html, body {
   height: 100%;
