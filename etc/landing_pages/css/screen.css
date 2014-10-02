@@ -458,15 +458,20 @@ body.no-overflow, html.no-overflow {
 }
 
 .b-jumbotron {
-  height: 685px;
+  height: 735px;
   width: 100%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-image: url(/etc/landing_pages/i/temp/jumbotron.jpg);
   background-color: #d1d2d4;
   text-align: center;
-  padding-top: 50px;
   position: relative;
+}
+
+.b-jumbotron__header {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .b-follow {
@@ -505,7 +510,6 @@ body.no-overflow, html.no-overflow {
 }
 
 .b-jumbotron--modified__header {
-  padding-top: 40px;
   padding-bottom: 40px;
   position: absolute;
   width: 100%;
@@ -1348,6 +1352,7 @@ html, body {
   width: 90%;
   margin: 0 auto;
   margin-bottom: 60px;
+  text-align: left;
 }
 .b-note i {
   font-style: italic;
@@ -1440,14 +1445,18 @@ html, body {
 }
 
 .b-freebook__steps__button {
-  background: #9d228b;
+  background: #fff;
   position: relative;
   bottom: 0px;
   margin-bottom: -35px;
   font-size: 16px;
+  color: #9e268d;
+}
+.b-freebook__steps__button span {
+  border-bottom: 1px dotted;
 }
 .b-freebook__steps__button:hover {
-  background: #9d228b;
+  background: #fff;
 }
 
 .b-freebook__styles {
@@ -1617,8 +1626,7 @@ html, body {
   }
 
   .b-jumbotron {
-    padding-top: 30px;
-    height: 520px;
+    height: 550px;
     background-size: auto 100%;
   }
 
@@ -1860,8 +1868,7 @@ html, body {
   }
 
   .b-jumbotron {
-    padding-top: 30px;
-    height: 380px;
+    height: 410px;
     background-size: auto 100%;
   }
 
@@ -1932,8 +1939,7 @@ html, body {
   }
 
   .b-jumbotron {
-    padding-top: 30px;
-    height: 300px;
+    height: 330px;
     background-size: auto 100%;
   }
   .b-jumbotron .b-heading {

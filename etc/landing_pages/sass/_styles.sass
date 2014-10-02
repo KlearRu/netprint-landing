@@ -101,7 +101,7 @@ body, html
 	@include box-shadow(2px 4px 4px rgba(0,0,0,.2))
 
 .b-jumbotron
-	height: 685px
+	height: 685px + 50px
 	width: 100%
 	background-repeat: no-repeat
 	background-position: 50% 50%
@@ -109,9 +109,13 @@ body, html
 	background-color: #d1d2d4
 
 	text-align: center
-	padding-top: 50px
+	//padding-top: 50px
 
 	position: relative
+.b-jumbotron__header
+	background-color: rgba(255,255,255,.9)
+	padding-top: 60px
+	padding-bottom: 60px
 .b-follow
 	position: absolute
 	bottom: 30px
@@ -140,7 +144,7 @@ body, html
 	height: auto
 	position: relative
 .b-jumbotron--modified__header
-	padding-top: 40px
+	//padding-top: 40px
 	padding-bottom: 40px
 	position: absolute
 	width: 100%

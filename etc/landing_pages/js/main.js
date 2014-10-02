@@ -151,10 +151,14 @@ NP = function() {
     this.freebookRules = function() {
         $(".js-freebook-rules").on("click", function(e) {
             e.preventDefault();
-            $(this).animate({
-                opacity: 0.01
-            });
-            $(".b-freebook__rules").slideDown();
+
+            var $el = $(this).find("span");
+
+            var text = $el.text();
+            $el.text( $el.data("text") );
+            $el.data("text", text);
+
+            $(".b-freebook__rules").slideToggle();
         });
 
         return this;

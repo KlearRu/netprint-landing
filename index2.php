@@ -26,9 +26,11 @@
 
 			<div class="b-jumbotron b-jumbotron--modified order-trigger-to--js">
 				<div class="b-jumbotron--modified__header">
-					<h2 class="b-heading">Модульные картины</h2>
-					<p class="b-subheading">Модульная картина состоит из сегментов,
-						объединённых изображением, сюжетом, стилем</p>
+					<div class="b-jumbotron__header">
+						<h2 class="b-heading">Модульные картины</h2>
+						<p class="b-subheading">Модульная картина состоит из сегментов,
+							объединённых изображением, сюжетом, стилем</p>
+					</div>
 				</div>
 
 				<div class="jumbotron--modified__image">

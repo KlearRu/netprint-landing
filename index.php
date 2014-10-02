@@ -25,9 +25,11 @@
 			<header class="b-header"></header>
 
 			<div class="b-jumbotron">
-				<h2 class="b-heading">Модульные картины</h2>
-				<p class="b-subheading">Модульная картина состоит из сегментов,
-					объединённых изображением, сюжетом, стилем</p>
+				<div class="b-jumbotron__header">
+					<h2 class="b-heading">Модульные картины</h2>
+					<p class="b-subheading">Модульная картина состоит из сегментов,
+						объединённых изображением, сюжетом, стилем</p>
+				</div>
 
 				<div class="b-follow"></div>
 			</div>

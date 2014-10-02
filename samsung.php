@@ -135,7 +135,7 @@
 						</ul>
 
 						<a href="#" class="b-button b-button--flat b-freebook__steps__button js-freebook-rules">
-							Правила акции
+							<span data-text="Скрыть правила">Показать правила</span>
 						</a>
 					</div>
 				</div>
