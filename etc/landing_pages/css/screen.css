@@ -358,7 +358,8 @@ body.no-overflow, html.no-overflow {
 }
 
 .b-button {
-  width: 292px;
+  padding-left: 80px;
+  padding-right: 80px;
   height: 64px;
   text-align: center;
   vertical-align: middle;
@@ -426,7 +427,7 @@ body.no-overflow, html.no-overflow {
   color: #9d228b;
   font-size: 45px;
   font-weight: 100;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   line-height: 120%;
 }
 
@@ -470,8 +471,8 @@ body.no-overflow, html.no-overflow {
 
 .b-jumbotron__header {
   background-color: rgba(255, 255, 255, 0.9);
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .b-follow {
