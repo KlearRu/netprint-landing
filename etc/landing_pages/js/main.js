@@ -176,6 +176,10 @@ NP = function() {
             }
 
             this.$popup.fadeOut();
+
+            //$("body").css({
+            //    overflow: "auto"
+            //});
         };
         this.hideAll = function(e) {
             if( e ) {
@@ -187,8 +191,11 @@ NP = function() {
             e.preventDefault();
 
             $(".b-popup").fadeOut();
-
             this.$popup.fadeIn();
+
+            //$("body").css({
+            //    overflow: "hidden"
+            //});
         };
         this.$trigger.on("touchstart, click", $.proxy(this.showPopup, this));
         this.$popup.find(".b-popup__close--js").on("touchstart, click", $.proxy(this.hideAll, this));
@@ -197,8 +204,19 @@ NP = function() {
     };
 
     this.closePopup = function() {
-        $(".b-popup").fadeOut();
-        $(".b-popups__frame").fadeOut();
+        //$("body").css({
+        //    overflow: "auto"
+        //});
+        $(".b-popup").fadeOut(function() {
+            //$("body").css({
+            //    overflow: "auto"
+            //});
+        });
+        $(".b-popups__frame").fadeOut(function() {
+            //$("body").css({
+            //    overflow: "auto"
+            //});
+        });
     };
     this.bindClosePopup = (function() {
         $(".b-popup__close--js").on("click", function(e) {

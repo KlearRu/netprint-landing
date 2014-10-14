@@ -1287,7 +1287,12 @@ html, body {
   top: 0;
   left: 0;
   z-index: 1000;
+  overflow: hidden;
   display: none;
+}
+
+iframe, object, embed {
+  max-width: 100%;
 }
 
 .b-auth__credentials--amnesia {
@@ -1769,10 +1774,12 @@ html, body {
   }
 
   .b-button {
-    font-size: 22px;
+    font-size: 16px;
     height: 50px;
     line-height: 50px;
-    width: 250px;
+    width: auto;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   html, body {
@@ -1856,11 +1863,17 @@ html, body {
     float: none;
     text-align: center;
     padding: 0 20px;
+    margin-top: 20px;
   }
 
   .b-jumbotron__header {
     padding-bottom: 20px;
     padding-top: 20px;
+  }
+
+  .b-auth__credentials--register .b-input--small {
+    width: 70%;
+    margin-right: 0;
   }
 }
 @media only screen and (max-width: 650px) {
@@ -1931,6 +1944,10 @@ html, body {
 
   .b-we__benefits__item__desc {
     font-size: 14px;
+  }
+
+  .b-auth__credentials--register .b-input--small {
+    margin-right: 0;
   }
 }
 @media only screen and (max-width: 320px) {
@@ -2021,10 +2038,12 @@ html, body {
   }
 
   .b-button {
-    font-size: 22px;
+    font-size: 14px;
     height: 50px;
     line-height: 50px;
-    width: 250px;
+    width: auto;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .b-note {

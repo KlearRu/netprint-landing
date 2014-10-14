@@ -132,7 +132,7 @@
 				</div>
 
 <!--				popup-trigger--js-->
-				<a class="b-button b-button--sample order-trigger--js" data-popup=".b-popup--login--js" href="#">Заказать</a>
+				<a class="b-button b-button--sample order-trigger--js" data-popup=".b-popup--login--js" href="#">Присоедениться к netPrint</a>
 			</div>
 
 			<div class="b-benefits">
