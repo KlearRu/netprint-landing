@@ -433,7 +433,7 @@ body.no-overflow, html.no-overflow {
 
 .b-subheading {
   color: #7f8c8d;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 160%;
   width: 515px;
   margin: 0 auto;
@@ -1514,7 +1514,7 @@ iframe, object, embed {
 .b-freebook__styles__item__picture {
   width: 100%;
   height: 299px;
-  background: #9da9ab;
+  background: #fff;
 }
 
 .b-freebook__styles__item__content {
@@ -1627,7 +1627,7 @@ iframe, object, embed {
   }
 
   .b-subheading {
-    font-size: 16px;
+    font-size: 18px;
     width: 60%;
   }
 
@@ -1957,8 +1957,12 @@ iframe, object, embed {
   }
 
   .b-subheading {
-    font-size: 12px;
+    font-size: 16px;
     width: 290px;
+  }
+
+  .b-subheading--big {
+    font-size: 16px;
   }
 
   .b-jumbotron {
@@ -2048,6 +2052,10 @@ iframe, object, embed {
 
   .b-note {
     font-size: 11px;
+  }
+
+  .b-popup__content {
+    top: 0;
   }
 }
 html, body {
